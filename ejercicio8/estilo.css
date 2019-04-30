@@ -1,0 +1,79 @@
+body
+{
+    background: #99AEFC;
+    
+}
+
+label
+{
+    font-family: 'Indie Flower', cursive;
+    color: #112C90;
+    
+    
+}
+input
+{
+    border-radius: 10px;
+    
+}
+.form-group
+{
+    text-align: center;
+    margin-top: 20%;
+}
+
+button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: 'Indie Flower', cursive;
+    transform: translate(-50%,-50%);
+    padding: 15px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #112C90;
+    letter-spacing: 2px;
+    font-size: 20px;
+    border-radius: 30px;
+    margin-top: 5%;
+}
+button:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #03a9f4;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: bottom right;
+    transform: scale(0);
+    border-radius: 30px;
+}
+button:hover:before{
+    transition: transform 0.5s;
+    transform-origin:top left;
+    transform: scale(1);
+}
+button:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border:2px solid #fff;
+    border-radius: 30px;
+    z-index: -1;
+    box-sizing: border-box;
+    transition: transform 0.5s;
+    transform-origin: top left;
+    transform: scale(1);
+}
+button:hover:after{
+    transition: transform 0.5s;
+    transform-origin: bottom right;
+    transform: scale(0);
+}
